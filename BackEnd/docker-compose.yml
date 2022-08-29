@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  facturation:
+    build:
+      context: .
+    command: bash -c "service cron start && python3 manage.py crontab add && python3 manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/usr/app
+    environment:
+      - EMAIL_HOST_USER=oussamahamraouy@gmail.com
+      - EMAIL_HOST_PASSWORD=esehgxtjfeqetjhd
+      - DEBUG=1
+      - DEFAULT_FROM_EMAIL=testmail@gmail.com
+      - SECRET_KEY=django-insecure-j2smyq9g^$e5a8k-33!fnf&(yab5v2*7#me4y@e*k_xe&sx8t@
+      - DB_HOST=db
+      - DB_NAME=facturation
+      - DB_USER=postgres
+      - DB_PASSWORD=testpass
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+  db:
+    image: postgres:latest
+    volumes:
+      - .:/usr/app
+    ports:
+      - "5432:5432"
+    restart: always
+    environment:
+      - POSTGRES_DB=facturation
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=testpass

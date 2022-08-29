@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-iohzb7-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      class="MuiCardContent-root css-1doetlm-MuiCardContent-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-rmhki7-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <span
+            class="MuiTypography-root MuiTypography-overline MuiTypography-gutterBottom css-chjbjb-MuiTypography-root"
+          >
+            Chiffre D affaire total
+          </span>
+          <h4
+            class="MuiTypography-root MuiTypography-h4 css-wz9of0-MuiTypography-root"
+          >
+            55
+            DH
+          </h4>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+        >
+          <div
+            class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-101pa6z-MuiAvatar-root"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+              data-testid="MoneyIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5 8h2v8H5zm7 0H9c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 6h-1v-4h1v4zm7-6h-3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 6h-1v-4h1v4z"
+              />
+              <path
+                d="M2 4v16h20V4H2zm2 14V6h16v12H4z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
